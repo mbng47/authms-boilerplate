@@ -22,29 +22,10 @@ app.listen(port, host, () => {
     console.log(`Listening on: http://${host}:${port}`);
 });
 
-
-
 app.get('/', (req, res) => {
     res.send('foerzta');
-
-})
-
-const spel = [
-    {id: 1, name: 'BOTW'},
-    {id: 2, name: 'GOW'},
-    {id: 3, name: 'SM2'},
-    {id: 4, name: 'TLOU'},
-    {id: 1, name: 'CP4'},
-]
-
-
-app.get('/scnd', (req, res) => {
-    res.send(spel);
-    // res.send(req.body);
-    console.log(req.body);
 })
 
 app.post('/scnd', (req, res) => {
     res.send('andra');
-    console.log(req.body);
 })
