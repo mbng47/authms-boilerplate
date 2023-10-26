@@ -1,0 +1,5 @@
+{"level":"info","message":"[EXPRESS] path: /, req: GET, ip: 127.0.0.1 ","service":"authms-boilerplate","timestamp":"2023-10-26 16:45:30"}
+{"level":"info","message":"[EXPRESS] Received request: GET, path: /, ip: 127.0.0.1","service":"authms-boilerplate","timestamp":"2023-10-26 16:49:17"}
+{"level":"info","message":"[EXPRESS] Received request: \"GET\", path: \"/\", ip: \"127.0.0.1\"","service":"authms-boilerplate","timestamp":"2023-10-26 16:49:52"}
+{"level":"info","message":"[EXPRESS] Received request: \"GET\", path: \"/\", ip: \"127.0.0.1\"","service":"authms-boilerplate","timestamp":"2023-10-26 16:49:57"}
+{"level":"info","message":"[EXPRESS] Received request: GET, path: /, ip: 127.0.0.1","service":"authms-boilerplate","timestamp":"2023-10-26 16:51:53"}
