@@ -7,10 +7,9 @@ const host = process.env.HOSTNAME || 'localhost';
 const port = process.env.PORT || 1050;
 
 try {
-  // logger.info(`Attempting to open server via micro service: ${name}`);
+  logger.info(`[${name}] Boostrapping micro service`);
   server({ host, port });
 } catch (error) {
-  // logger.error(`Attempted to open server via micro service: ${name} but caught exception: ${error}`);
-  console.log(`Attempted to open server via micro service: ${name} but caught exception: ${error}`);
+  logger.error(`[${name}] Caught exception: ${error}`);
 }
 
