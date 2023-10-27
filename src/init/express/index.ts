@@ -12,9 +12,9 @@ const urlencoded = express.urlencoded;
 import { logger } from '../../logger';
 import createServer from './libs/express';
 
-const server = ({ host, port }) => 
+const server = ({ host, port }) =>
 
-    createServer( { app, cors, compression, helmet, logger } )
+    createServer({ app, json, urlencoded, cors, compression, helmet, logger })
         .server({ host, port });
 
 
