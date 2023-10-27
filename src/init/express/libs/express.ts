@@ -13,8 +13,13 @@ export default function createServer({
     app.use(urlencoded({ extended: true })) // app.use(express.urlencoded());
 
     app.get('/', (req, res) => {
-      // res.end('foerzta');
+      // logger.info(`Received request: ${req.method}, path: ${req.path}, ip: ${req.ip}`);
       res.json({ data: 'foerzta' });
+    });
+
+    app.post('/', (req, res) => {
+      // logger.info(`Received request: ${req.method}, path: ${req.path}, ip: ${req.ip}`);
+      res.json(req.body);
     });
 
     app.listen(port, host, () => {
@@ -23,4 +28,5 @@ export default function createServer({
     });
   }
 }
+
 

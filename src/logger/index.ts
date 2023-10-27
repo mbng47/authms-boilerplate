@@ -13,4 +13,4 @@ const logger = createLogger({
     transports: ownTransports
 })
 
-export { logger }
+export { logger };
