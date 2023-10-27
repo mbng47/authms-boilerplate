@@ -9,16 +9,16 @@ export default function createServer({
     app.options('*', cors({ credentials: true, origin: true }));
     app.use(cors());
     app.use(compression());
-    app.use(json()); // app.use(express.json());
-    app.use(urlencoded({ extended: true })) // app.use(express.urlencoded());
+    app.use(json());
+    app.use(urlencoded({ extended: true }))
 
     app.get('/', (req, res) => {
-      // logger.info(`Received request: ${req.method}, path: ${req.path}, ip: ${req.ip}`);
+      logger.info(`Received request: ${req.method}, path: ${req.path}, ip: ${req.ip}`);
       res.json({ data: 'foerzta' });
     });
 
     app.post('/', (req, res) => {
-      // logger.info(`Received request: ${req.method}, path: ${req.path}, ip: ${req.ip}`);
+      logger.info(`Received request: ${req.method}, path: ${req.path}, ip: ${req.ip}`);
       res.json(req.body);
     });
 
