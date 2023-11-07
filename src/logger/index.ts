@@ -1,5 +1,5 @@
 import { format, createLogger, transports } from 'winston';
-import createTransports from './libs/transports'
+import createTransports from './libs/transports';
 
 const { combine, timestamp, errors } = format;
 const ownTransports = (() => createTransports({ format, transports }).logger())()
